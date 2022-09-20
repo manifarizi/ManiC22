@@ -1,6 +1,9 @@
 # ManiC22
 My own CPU (It's Just a Assembly Like Programming Language Interpreter)
 
+![vscode](https://img.shields.io/badge/vsCode-Open%20in%20vsCode-blue?logo=visualstudiocode&style=for-the-badge&)
+![vscode](https://img.shields.io/badge/Version-0.0.1-yellow?style=for-the-badge&)
+
 ### Table of Contents  
 0 - [Instructions](#Instructions)  
 * [Math](#Math)
@@ -9,6 +12,17 @@ My own CPU (It's Just a Assembly Like Programming Language Interpreter)
 1 - [Labels and Variables](#Labels_and_Variables)  
 2 - [IF](#IF)  
 3 - [SysCalls](#Sys_Calls)
+### How To Run a File
+
+```bash
+python3 Run.py File_Name
+```
+
+Example:
+
+```bash
+python3 Run.py Test.asm
+```
 <a name="Instructions"/>
 
 ## Instructions 
