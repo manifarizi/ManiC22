@@ -1,23 +1,9 @@
-i: db 10
-mov aox, 15
-mov aoy, 15
-mov rrm, $BDU
-_t:
-    add aox, 5
-    int 21
-    cmp aox, 40
-    jl _t
-mov rrm, $BDR
-int 21
-mov aoy, 30
-jmp _t
-mov aox, 20
-mov rrm, $BDL
-int 21
-mov aox, 40
-mov aoy, 25
-mov rrm, $BDD
-int 21
-mov rrm, $BDR
-int 21
-int 4
+mov ti, 2000   ; Set ti = 2000
+int 32         ; Sleep ti Miliseconds
+int 16         ; Set ab to Last Key Press
+mov aox, ad    ; Set X = ab
+mov aoy, 1     ; Set Y = 1
+mov aoc, #fff  ; Set Color = White
+mov rrm, $FB   ; Set Shape = Full Block
+int 21         ; Add The Shape To Screen
+int 4          ; MainLoop
